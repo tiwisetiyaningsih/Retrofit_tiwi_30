@@ -3,14 +3,16 @@ package com.example.retrofit_tiwi_30.model
 import com.google.gson.annotations.SerializedName
 
 data class Province(
-    @SerializedName("Kode Provi")
+    @SerializedName("FID")
+    val fid: Int,
+    @SerializedName("Kode_Provi")
     val code: Int,
     @SerializedName("Provinsi")
     val province: String,
-    @SerializedName("Kasus Posi")
+    @SerializedName("Kasus_Posi")
     val positive: Int,
-    @SerializedName("Kasus Semb")
+    @SerializedName("Kasus_Semb")
     val recover: Int,
-    @SerializedName("Kasus Meni")
-    val death: Int
+    @SerializedName("Kasus_Meni")
+    val death: Int,
 )
